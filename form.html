@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGESTRATION FORM</title>
+
+</head>
+
+<body>
+    <form>
+        <fieldset legend="">
+            
+            <h1>Registration Form</h1>
+
+            <label>First Name:&nbsp&nbsp&nbsp</label>
+            <input type="text" placeholder="fristname" required /><br><br>
+
+            <label>Last Name:&nbsp&nbsp&nbsp</label>
+            <input type="text" placeholder="lastname" required /><br><br>
+
+            <label>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="email" placeholder="email" required /><br><br>
+
+            <label>Password:&nbsp&nbsp&nbsp&nbsp&nbsp<label>
+                    <input type="password" placeholder="password" pattern="[A-Za-z0-9]{4,8}" required /><br><br>
+
+                    <label>Contact:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="tel" placeholder="contact" maxlength="10" required /><br><br>
+                    <label >City:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input list="browser"placeholder="city" name="browser">
+                    <datalist id="browser">
+                        <option value="Indore"></option>
+                        <option value="Dhar"></option>
+                        <option value="Rau"></option>
+                        <option value="pithampur"></option>
+                    </datalist><br><br>
+                    <label>Linkedin Url:</label>
+                    <input type="url" pattern="https://.*" placeholder="url" size="20"><br><br>
+                    <label>Date:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="date"><br><br>
+                    <label>Subject:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input list="browser" placeholder="Subject" name="browser">
+                    <datalist id="browser">
+                        <option value="pcm">PCM</option>
+                        <option value="pcb">PCB</option>
+                        <option value="arts">ARTS</option>
+                    </datalist><br><br>
+                    <label>Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label>
+                        female
+                        <input type="radio" checked=true name="gender" required>
+                        male
+                        <input type="radio"  name="gender" required>
+                    </label><br><br>
+                    <label>Upload File:</label>
+                    <input type="file"><br><br>
+
+                    <textarea rows="5" cols="50" placeholder="Any query..."></textarea><br>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+         </fieldset>
+    </form>
+
+</body>
+
+</html>
